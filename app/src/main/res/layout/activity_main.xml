@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Anganwadi Nashta Bhojan Pavti"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="2dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BODHI S.H.G."
+            android:textSize="12sp"
+            android:gravity="center"
+            android:paddingBottom="12dp"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:useDefaultMargins="true">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="03 से 06 वर्ष"
+                android:textSize="16sp"
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/inputAge3to6"
+                android:layout_width="90dp"
+                android:layout_height="48dp"
+                android:inputType="number"
+                android:maxLength="4"
+                android:selectAllOnFocus="true"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="06 माह से 03 वर्ष"
+                android:textSize="16sp"
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/inputAge6mto3"
+                android:layout_width="90dp"
+                android:layout_height="48dp"
+                android:inputType="number"
+                android:maxLength="4"
+                android:selectAllOnFocus="true"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="गर्भवती/धात्री"
+                android:textSize="16sp"
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/inputPregnant"
+                android:layout_width="90dp"
+                android:layout_height="48dp"
+                android:inputType="number"
+                android:maxLength="4"
+                android:selectAllOnFocus="true"
+                android:gravity="center"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="अतिकम"
+                android:textSize="16sp"
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/inputAtikam"
+                android:layout_width="90dp"
+                android:layout_height="48dp"
+                android:inputType="number"
+                android:maxLength="4"
+                android:selectAllOnFocus="true"
+                android:gravity="center"
+                android:textSize="18sp"/>
+        </GridLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:fillViewport="true"
+            android:overScrollMode="ifContentScrolls"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="horizontal">
+
+            <TableLayout
+                android:id="@+id/resultTable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+                    <TextView style="@style/TableHeader" android:text="दिवस"/>
+                    <TextView style="@style/TableHeader" android:text="नाश्ता"/>
+                    <TextView style="@style/TableHeader" android:text="मात्रा (ग्राम)"/>
+                    <TextView style="@style/TableHeader" android:text="भोजन"/>
+                    <TextView style="@style/TableHeader" android:text="मात्रा (ग्राम)"/>
+                    <TextView style="@style/TableHeader" android:text="अतिकम संख्या"/>
+                    <TextView style="@style/TableHeader" android:text="अतिकम मात्रा (ग्राम)"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView style="@style/TableCell" android:text="सोमवार"/>
+                    <TextView style="@style/TableCell" android:text="मीठी लापसी"/>
+                    <TextView style="@style/TableCell" android:id="@+id/monBreakfast"/>
+                    <TextView style="@style/TableCell" android:text="सांभर चावल"/>
+                    <TextView style="@style/TableCell" android:id="@+id/monMeal"/>
+                    <TextView style="@style/TableCell" android:id="@+id/monAtikamCount"/>
+                    <TextView style="@style/TableCell" android:id="@+id/monAtikamQty"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView style="@style/TableCell" android:text="मंगलवार"/>
+                    <TextView style="@style/TableCell" android:text="पौष्टिक खिचड़ी"/>
+                    <TextView style="@style/TableCell" android:id="@+id/tueBreakfast"/>
+                    <TextView style="@style/TableCell" android:text="खीर पूरी आलू चना सब्जी"/>
+                    <TextView style="@style/TableCell" android:id="@+id/tueMeal"/>
+                    <TextView style="@style/TableCell" android:id="@+id/tueAtikamCount"/>
+                    <TextView style="@style/TableCell" android:id="@+id/tueAtikamQty"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView style="@style/TableCell" android:text="बुधवार"/>
+                    <TextView style="@style/TableCell" android:text="मीठी लापसी"/>
+                    <TextView style="@style/TableCell" android:id="@+id/wedBreakfast"/>
+                    <TextView style="@style/TableCell" android:text="हलीम खिचड़ा"/>
+                    <TextView style="@style/TableCell" android:id="@+id/wedMeal"/>
+                    <TextView style="@style/TableCell" android:id="@+id/wedAtikamCount"/>
+                    <TextView style="@style/TableCell" android:id="@+id/wedAtikamQty"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView style="@style/TableCell" android:text="गुरुवार"/>
+                    <TextView style="@style/TableCell" android:text="नमकीन दलिया"/>
+                    <TextView style="@style/TableCell" android:id="@+id/thuBreakfast"/>
+                    <TextView style="@style/TableCell" android:text="कढ़ी पकोड़ा वेज पुलाव"/>
+                    <TextView style="@style/TableCell" android:id="@+id/thuMeal"/>
+                    <TextView style="@style/TableCell" android:id="@+id/thuAtikamCount"/>
+                    <TextView style="@style/TableCell" android:id="@+id/thuAtikamQty"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView style="@style/TableCell" android:text="शुक्रवार"/>
+                    <TextView style="@style/TableCell" android:text="उपमा"/>
+                    <TextView style="@style/TableCell" android:id="@+id/friBreakfast"/>
+                    <TextView style="@style/TableCell" android:text="हलीम खिचड़ा"/>
+                    <TextView style="@style/TableCell" android:id="@+id/friMeal"/>
+                    <TextView style="@style/TableCell" android:id="@+id/friAtikamCount"/>
+                    <TextView style="@style/TableCell" android:id="@+id/friAtikamQty"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView style="@style/TableCell" android:text="शनिवार"/>
+                    <TextView style="@style/TableCell" android:text="मीठी लापसी"/>
+                    <TextView style="@style/TableCell" android:id="@+id/satBreakfast"/>
+                    <TextView style="@style/TableCell" android:text="सांभर चावल"/>
+                    <TextView style="@style/TableCell" android:id="@+id/satMeal"/>
+                    <TextView style="@style/TableCell" android:id="@+id/satAtikamCount"/>
+                    <TextView style="@style/TableCell" android:id="@+id/satAtikamQty"/>
+                </TableRow>
+            </TableLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+</ScrollView>
