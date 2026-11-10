@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#F6F7F9"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pavti Helper"
+        android:textColor="#4B5A66"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="28dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="03 से 06 वर्ष"
+                android:textColor="#4B5A66"
+                android:textSize="17sp"/>
+
+            <EditText
+                android:id="@+id/inputAge3to6"
+                android:layout_width="90dp"
+                android:layout_height="48dp"
+                android:inputType="number"
+                android:gravity="center"
+                android:textColor="#404A52"
+                android:backgroundTint="#667C8F"
+                android:textSize="19sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="06 माह से 03 वर्ष"
+                android:textColor="#4B5A66"
+                android:textSize="17sp"/>
+
+            <EditText
+                android:id="@+id/inputAge6mto3"
+                android:layout_width="90dp"
+                android:layout_height="48dp"
+                android:inputType="number"
+                android:gravity="center"
+                android:textColor="#404A52"
+                android:backgroundTint="#667C8F"
+                android:textSize="19sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="गर्भवती/धात्री"
+                android:textColor="#4B5A66"
+                android:textSize="17sp"/>
+
+            <EditText
+                android:id="@+id/inputPregnant"
+                android:layout_width="90dp"
+                android:layout_height="48dp"
+                android:inputType="number"
+                android:gravity="center"
+                android:textColor="#404A52"
+                android:backgroundTint="#667C8F"
+                android:textSize="19sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="अतिकम"
+                android:textColor="#4B5A66"
+                android:textSize="17sp"/>
+
+            <EditText
+                android:id="@+id/inputAtikam"
+                android:layout_width="90dp"
+                android:layout_height="48dp"
+                android:inputType="number"
+                android:gravity="center"
+                android:textColor="#404A52"
+                android:backgroundTint="#667C8F"
+                android:textSize="19sp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/okButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/nav_button"
+            android:text="OK"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/hiddenAttribution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BODHI S.H.G."
+        android:textColor="#00000000"
+        android:textSize="12sp"
+        android:textIsSelectable="true"/>
+
+</LinearLayout>

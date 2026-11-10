@@ -14,3 +14,9 @@ android {
         versionName "1.0"
     }
 }
+
+android.applicationVariants.all { variant ->
+    variant.outputs.all {
+        outputFileName = "pavti_helper.apk"
+    }
+}

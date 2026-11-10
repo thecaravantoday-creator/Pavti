@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- HEADER BASE -->
+    <style name="ResponsiveHeaderBase">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/header_cell</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
+    </style>
+
+    <!-- CELL BASE -->
+    <style name="ResponsiveCellBase">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/table_cell</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:maxLines">4</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
+    </style>
+
+    <!-- COLUMN WEIGHTS -->
+
+    <!-- दिवस -->
+    <style name="ResponsiveHeaderDay" parent="ResponsiveHeaderBase">
+        <item name="android:layout_weight">0.85</item>
+    </style>
+
+    <style name="ResponsiveCellDay" parent="ResponsiveCellBase">
+        <item name="android:layout_weight">0.85</item>
+    </style>
+
+    <!-- नाश्ता -->
+    <style name="ResponsiveHeaderBreakfast" parent="ResponsiveHeaderBase">
+        <item name="android:layout_weight">1.20</item>
+    </style>
+
+    <style name="ResponsiveCellBreakfast" parent="ResponsiveCellBase">
+        <item name="android:layout_weight">1.20</item>
+    </style>
+
+    <!-- मात्रा -->
+    <style name="ResponsiveHeaderQty" parent="ResponsiveHeaderBase">
+        <item name="android:layout_weight">1.05</item>
+    </style>
+
+    <style name="ResponsiveCellQty" parent="ResponsiveCellBase">
+        <item name="android:layout_weight">1.05</item>
+    </style>
+
+    <!-- भोजन -->
+    <style name="ResponsiveHeaderMeal" parent="ResponsiveHeaderBase">
+        <item name="android:layout_weight">1.85</item>
+    </style>
+
+    <style name="ResponsiveCellMeal" parent="ResponsiveCellBase">
+        <item name="android:layout_weight">1.85</item>
+    </style>
+
+    <!-- अतिकम संख्या -->
+    <style name="ResponsiveHeaderAtikamCount" parent="ResponsiveHeaderBase">
+        <item name="android:layout_weight">1.05</item>
+    </style>
+
+    <style name="ResponsiveCellAtikamCount" parent="ResponsiveCellBase">
+        <item name="android:layout_weight">1.05</item>
+    </style>
+
+    <!-- अतिकम मात्रा -->
+    <style name="ResponsiveHeaderAtikamQty" parent="ResponsiveHeaderBase">
+        <item name="android:layout_weight">1.25</item>
+    </style>
+
+    <style name="ResponsiveCellAtikamQty" parent="ResponsiveCellBase">
+        <item name="android:layout_weight">1.25</item>
+    </style>
+
+</resources>

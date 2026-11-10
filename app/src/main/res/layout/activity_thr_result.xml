@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F6F7F9"
+    android:padding="3dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="34dp" android:orientation="horizontal" android:gravity="center_vertical" android:baselineAligned="false">
+        <Button android:id="@+id/thrBackButton" android:layout_width="76dp" android:layout_height="32dp" android:minHeight="0dp" android:minWidth="0dp" android:padding="0dp" android:background="@drawable/nav_button" android:text="BACK" android:textColor="#FFFFFF" android:textStyle="bold" android:textSize="12sp"/>
+        <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:text="THR" android:textColor="#4B5A66" android:textStyle="bold" android:textSize="18sp" android:gravity="center"/>
+        <View android:layout_width="76dp" android:layout_height="1dp"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="62dp" android:orientation="horizontal" android:baselineAligned="false">
+        <TextView style="@style/ThrHeaderCategory" android:text="हितग्राही वर्ग"/>
+        <TextView style="@style/ThrHeaderInstallment" android:text="किश्त क्रमांक"/>
+        <TextView style="@style/ThrHeaderCount" android:text="कुल दर्ज हितग्राही संख्या"/>
+        <TextView style="@style/ThrHeaderPackets" android:text="कुल आवश्यक पैकेट संख्या"/>
+        <TextView style="@style/ThrHeaderKg" android:text="कुल अपेक्षित मात्रा (वजन Kg में)"/>
+        <TextView style="@style/ThrHeaderReceivedPackets" android:text="समूह से प्राप्त पैकेट संख्या"/>
+        <TextView style="@style/ThrHeaderReceivedKg" android:text="कुल प्राप्त मात्रा (वजन Kg में)"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="54dp" android:orientation="horizontal" android:baselineAligned="false">
+        <TextView style="@style/ThrCellCategory" android:text="06 माह से 03 वर्ष के बच्चे" android:layout_height="match_parent"/>
+        <TextView style="@style/ThrCellInstallment" android:text="" android:layout_height="match_parent"/>
+        <TextView style="@style/ThrCellCount" android:id="@+id/thrChildCount" android:layout_height="match_parent"/>
+        <TextView style="@style/ThrCellPackets" android:id="@+id/thrChildPackets" android:layout_height="match_parent"/>
+        <TextView style="@style/ThrCellKg" android:id="@+id/thrChildExpectedKg" android:layout_height="match_parent"/>
+        <TextView style="@style/ThrCellReceivedPackets" android:id="@+id/thrChildReceivedPackets" android:layout_height="match_parent"/>
+        <TextView style="@style/ThrCellReceivedKg" android:id="@+id/thrChildReceivedKg" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="54dp" android:orientation="horizontal" android:baselineAligned="false">
+        <TextView style="@style/ThrCellCategory" android:text="गर्भवती एवं धात्री महिलायें" android:layout_height="match_parent"/>
+        <TextView style="@style/ThrCellInstallment" android:text="" android:layout_height="match_parent"/>
+        <TextView style="@style/ThrCellCount" android:id="@+id/thrPregnantCount" android:layout_height="match_parent"/>
+        <TextView style="@style/ThrCellPackets" android:id="@+id/thrPregnantPackets" android:layout_height="match_parent"/>
+        <TextView style="@style/ThrCellKg" android:id="@+id/thrPregnantExpectedKg" android:layout_height="match_parent"/>
+        <TextView style="@style/ThrCellReceivedPackets" android:id="@+id/thrPregnantReceivedPackets" android:layout_height="match_parent"/>
+        <TextView style="@style/ThrCellReceivedKg" android:id="@+id/thrPregnantReceivedKg" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="54dp" android:orientation="horizontal" android:baselineAligned="false">
+        <TextView style="@style/ThrCellCategory" android:text="14 से 18 वर्ष की किशोरी बालिकाएं" android:layout_height="match_parent"/>
+        <TextView style="@style/ThrCellInstallment" android:text="" android:layout_height="match_parent"/>
+        <TextView style="@style/ThrCellCount" android:id="@+id/thrAdolescentCount" android:layout_height="match_parent"/>
+        <TextView style="@style/ThrCellPackets" android:id="@+id/thrAdolescentPackets" android:layout_height="match_parent"/>
+        <TextView style="@style/ThrCellKg" android:id="@+id/thrAdolescentExpectedKg" android:layout_height="match_parent"/>
+        <TextView style="@style/ThrCellReceivedPackets" android:id="@+id/thrAdolescentReceivedPackets" android:layout_height="match_parent"/>
+        <TextView style="@style/ThrCellReceivedKg" android:id="@+id/thrAdolescentReceivedKg" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="28dp" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginTop="4dp" android:baselineAligned="false">
+        <TextView android:layout_width="115dp" android:layout_height="match_parent" android:gravity="center_vertical" android:textColor="#4B5A66" android:text="कुल पैकेट = " android:textStyle="bold" android:textSize="15sp"/>
+        <TextView android:id="@+id/thrTotalPackets" android:layout_width="110dp" android:layout_height="match_parent" android:gravity="center_vertical" android:textColor="#4B4B4B" android:textStyle="bold" android:textSize="15sp"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="28dp" android:orientation="horizontal" android:gravity="center_vertical" android:baselineAligned="false">
+        <TextView android:layout_width="115dp" android:layout_height="match_parent" android:gravity="center_vertical" android:textColor="#4B5A66" android:text="कुल मात्रा = " android:textStyle="bold" android:textSize="15sp"/>
+        <TextView android:id="@+id/thrTotalKg" android:layout_width="130dp" android:layout_height="match_parent" android:gravity="center_vertical" android:textColor="#4B4B4B" android:textStyle="bold" android:textSize="15sp"/>
+    </LinearLayout>
+</LinearLayout>

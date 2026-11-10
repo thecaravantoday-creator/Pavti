@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F6F7F9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="2dp" android:paddingRight="2dp" android:paddingBottom="2dp" android:paddingTop="2dp">
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@drawable/nav_button"
+            android:text="BACK"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:layout_marginBottom="2dp"/>
+
+        <!-- HEADER -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:orientation="horizontal">
+
+            <TextView style="@style/ResponsiveHeaderDay" android:text="दिवस"/>
+            <TextView style="@style/ResponsiveHeaderBreakfast" android:text="नाश्ता"/>
+            <TextView style="@style/ResponsiveHeaderQty" android:text="मात्रा (ग्राम)"/>
+            <TextView style="@style/ResponsiveHeaderMeal" android:text="भोजन"/>
+            <TextView style="@style/ResponsiveHeaderQty" android:text="मात्रा (ग्राम)"/>
+            <TextView style="@style/ResponsiveHeaderAtikamCount" android:text="अतिकम संख्या"/>
+            <TextView style="@style/ResponsiveHeaderAtikamQty" android:text="अतिकम मात्रा (ग्राम)"/>
+        </LinearLayout>
+
+        <!-- MONDAY -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:orientation="horizontal">
+
+            <TextView style="@style/ResponsiveCellDay" android:text="सोमवार"/>
+            <TextView style="@style/ResponsiveCellBreakfast" android:text="मीठी लापसी"/>
+            <TextView style="@style/ResponsiveCellQty" android:id="@+id/monBreakfast"/>
+            <TextView style="@style/ResponsiveCellMeal" android:text="सांभर चावल"/>
+            <TextView style="@style/ResponsiveCellQty" android:id="@+id/monMeal"/>
+            <TextView style="@style/ResponsiveCellAtikamCount" android:id="@+id/monAtikamCount"/>
+            <TextView style="@style/ResponsiveCellAtikamQty" android:id="@+id/monAtikamQty"/>
+        </LinearLayout>
+
+        <!-- TUESDAY -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:orientation="horizontal">
+
+            <TextView style="@style/ResponsiveCellDay" android:text="मंगलवार"/>
+            <TextView style="@style/ResponsiveCellBreakfast" android:text="पौष्टिक खिचड़ी"/>
+            <TextView style="@style/ResponsiveCellQty" android:id="@+id/tueBreakfast"/>
+            <TextView style="@style/ResponsiveCellMeal" android:text="खीर पूरी आलू चना सब्जी"/>
+            <TextView style="@style/ResponsiveCellQty" android:id="@+id/tueMeal"/>
+            <TextView style="@style/ResponsiveCellAtikamCount" android:id="@+id/tueAtikamCount"/>
+            <TextView style="@style/ResponsiveCellAtikamQty" android:id="@+id/tueAtikamQty"/>
+        </LinearLayout>
+
+        <!-- WEDNESDAY -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:orientation="horizontal">
+
+            <TextView style="@style/ResponsiveCellDay" android:text="बुधवार"/>
+            <TextView style="@style/ResponsiveCellBreakfast" android:text="मीठी लापसी"/>
+            <TextView style="@style/ResponsiveCellQty" android:id="@+id/wedBreakfast"/>
+            <TextView style="@style/ResponsiveCellMeal" android:text="हलीम खिचड़ा"/>
+            <TextView style="@style/ResponsiveCellQty" android:id="@+id/wedMeal"/>
+            <TextView style="@style/ResponsiveCellAtikamCount" android:id="@+id/wedAtikamCount"/>
+            <TextView style="@style/ResponsiveCellAtikamQty" android:id="@+id/wedAtikamQty"/>
+        </LinearLayout>
+
+        <!-- THURSDAY -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:orientation="horizontal">
+
+            <TextView style="@style/ResponsiveCellDay" android:text="गुरुवार"/>
+            <TextView style="@style/ResponsiveCellBreakfast" android:text="नमकीन दलिया"/>
+            <TextView style="@style/ResponsiveCellQty" android:id="@+id/thuBreakfast"/>
+            <TextView style="@style/ResponsiveCellMeal" android:text="कढ़ी पकोड़ा वेज पुलाव"/>
+            <TextView style="@style/ResponsiveCellQty" android:id="@+id/thuMeal"/>
+            <TextView style="@style/ResponsiveCellAtikamCount" android:id="@+id/thuAtikamCount"/>
+            <TextView style="@style/ResponsiveCellAtikamQty" android:id="@+id/thuAtikamQty"/>
+        </LinearLayout>
+
+        <!-- FRIDAY -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:orientation="horizontal">
+
+            <TextView style="@style/ResponsiveCellDay" android:text="शुक्रवार"/>
+            <TextView style="@style/ResponsiveCellBreakfast" android:text="उपमा"/>
+            <TextView style="@style/ResponsiveCellQty" android:id="@+id/friBreakfast"/>
+            <TextView style="@style/ResponsiveCellMeal" android:text="हलीम खिचड़ा"/>
+            <TextView style="@style/ResponsiveCellQty" android:id="@+id/friMeal"/>
+            <TextView style="@style/ResponsiveCellAtikamCount" android:id="@+id/friAtikamCount"/>
+            <TextView style="@style/ResponsiveCellAtikamQty" android:id="@+id/friAtikamQty"/>
+        </LinearLayout>
+
+        <!-- SATURDAY -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:orientation="horizontal">
+
+            <TextView style="@style/ResponsiveCellDay" android:text="शनिवार"/>
+            <TextView style="@style/ResponsiveCellBreakfast" android:text="मीठी लापसी"/>
+            <TextView style="@style/ResponsiveCellQty" android:id="@+id/satBreakfast"/>
+            <TextView style="@style/ResponsiveCellMeal" android:text="सांभर चावल"/>
+            <TextView style="@style/ResponsiveCellQty" android:id="@+id/satMeal"/>
+            <TextView style="@style/ResponsiveCellAtikamCount" android:id="@+id/satAtikamCount"/>
+            <TextView style="@style/ResponsiveCellAtikamQty" android:id="@+id/satAtikamQty"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+
+
+
+
+
